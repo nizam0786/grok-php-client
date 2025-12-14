@@ -15,6 +15,8 @@ enum Model: string
     case GROK_2 = 'grok-2';
     case GROK_2_LATEST = 'grok-2-latest';
     case GROK_BETA = 'grok-beta';
+    case GROK_4_1_FAST_NON_REASONING = 'grok-4-1-fast-non-reasoning';
+
 
     /**
      * Get the default model.
@@ -35,6 +37,7 @@ enum Model: string
             self::GROK_2_LATEST->value => self::GROK_2_LATEST,
             self::GROK_BETA->value => self::GROK_BETA,
             self::GROK_VISION_BETA->value => self::GROK_VISION_BETA,
+            self::GROK_4_1_FAST_NON_REASONING->value => self::GROK_4_1_FAST_NON_REASONING,
             default => throw new \InvalidArgumentException('Invalid model value'),
         };
     }
